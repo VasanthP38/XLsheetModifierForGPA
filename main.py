@@ -288,7 +288,7 @@ if xlfile:
         st.download_button(
             "Download Modified File",
             open(modified_workbook_path, "rb").read(),
-            "file.xlsx",
+            "modified_workbook.xlsx",
             "xlsx",
             key='download_xlsx'
         )
