@@ -286,7 +286,7 @@ if xlfile:
         modified_workbook_path = fillgpa(xlfile)
         st.write("Download Modified Spreadsheet Here")
         st.download_button(
-            "Download File",
+            "Download Modified File",
             open(modified_workbook_path, "rb").read(),
             "file.xlsx",
             "xlsx",
