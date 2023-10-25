@@ -279,7 +279,6 @@ def fillgpa(path):
 
     st.write("Spreadsheet Updated")
     workbook.save(temp_path := tempfile.NamedTemporaryFile(delete=False).name)
-
     return temp_path
 
 if xlfile:
