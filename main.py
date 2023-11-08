@@ -2,6 +2,14 @@ import streamlit as st
 import openpyxl
 import tempfile
 xlfile=st.file_uploader("Upload XL File Here", type='xlsx')
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 def fillgpa(path):
     workbook = openpyxl.load_workbook(path)
