@@ -1,7 +1,9 @@
 import streamlit as st
 import openpyxl
 import tempfile
-xlfile=st.file_uploader("Upload XL File Here", type='xlsx')
+st.title("XL Mod For GPA Calculation")
+st.write("Web Application that modifies spreadsheet and calculate GPA for entire spreadsheet and enter it automatically and return Final spreadsheet with GPA")
+xlfile=st.file_uploader("Drag and Drop (or) Upload XL File Here", type='xlsx')
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
